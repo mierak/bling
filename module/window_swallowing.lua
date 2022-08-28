@@ -30,7 +30,7 @@ end
 local function is_in_table(element, table)
     local res = false
     for _, value in pairs(table) do
-        if element:match(value) then
+        if element == value then
             res = true
             break
         end
